@@ -1,0 +1,13 @@
+const colorDisplay = document.getElementById('color-display');
+const colors = [
+    // Add your 50 desired colors here as hexadecimal strings
+    "#FF0000", "#00FF00", "#0000FF",
+    // ... more colors ...
+];
+
+function changeColor() {
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    colorDisplay.style.backgroundColor = colors[randomIndex];
+}
+
+colorDisplay.addEventListener('click', changeColor);
